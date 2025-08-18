@@ -10,6 +10,11 @@
     <!-- Lier les fichiers CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Intégrer les fichier javascript -->
+    
+    <!-- balise style si besoin -->
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -140,10 +145,73 @@
                     </p>
                     <p>
                         <cite>
-                            Au guet ! (1989), Terry Pratchette (trad. Patrick Couton), éd. L'Atalante, 1997
+                            Au guet ! (1989), Terry Pratchett (trad. Patrick Couton), éd. L'Atalante, 1997
                         </cite>
                     </p>
                 </blockquote>
+                <h3>Les tableaux HTML</h3>
+                <style>
+                    #exempleTableau{
+                        border-collapse: collapse;
+                    }
+
+                    #exempleTableau td,
+                    #exempleTableau th{
+                        border: 1px solid black;
+                    }
+                </style>
+                <table id="exempleTableau">
+                    <thead>
+                        <tr>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">l1 - c1</td>
+                            <td>l1 - c2</td>
+                            <td>l1 - c3</td>
+                            <td>l1 - c4</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">l2 - c1</td>
+                            <td>l2 - c2</td>
+                            <td>l2 - c3</td>
+                            <td>l2 - c4</td>
+                            <td>l2 - c5</td>
+                        </tr>
+                        <tr>
+                            <td>l3 - c1</td>
+                            <td>l3 - c2</td>
+                            <td>l3 - c3</td>
+                            <td>l3 - c4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2">l4 - c1</td>
+                            <td>l4 - c2</td>
+                            <td>l4 - c3</td>
+                            <td>l4 - c4</td>
+                        </tr>
+                        <tr>
+                            <td>l5 - c1</td>
+                            <td>l5 - c2</td>
+                            <td>l5 - c3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                            <th>Entête</th>
+                        </tr>
+                    </tfoot>
+                </table>
             </article>
             <article>
                 <header>

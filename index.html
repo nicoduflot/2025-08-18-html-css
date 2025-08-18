@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Intégrer les fichier javascript -->
 </head>
+
 <body>
     <header>
         <div>
@@ -33,6 +35,115 @@
                 <header>
                     <h2>Balises HTML de contenu texte</h2>
                 </header>
+                <h3>Les paragraphes</h3>
+                <p>
+                    Les paragraphes séparent naturellement les blocs de texte en vertical, mais s'il y a besoin d'un
+                    retour chariot au sein d'un paragraphe :<br />
+                    <code>&lt;br /&gt;</code>.<br />
+                    La balise "br" permet donc un retour "à la ligne" dans un paragraphe.
+                </p>
+                <h4>Exemple paragraphes et retour chariot</h4>
+                <p>
+                    Mon petit garçon est malade.
+                </p>
+                <p>
+                    Il n’est pas à l’école,<br />
+                    donc je dois télétravailler
+                </p>
+                <h3>Les listes</h3>
+                <p>
+                    Les listes sont équivalentes aux paragraphes dans la hièrarchie des balises. Il faut donc les déclarer à l'extérieur des paragraphes
+                </p>
+                <h4>Les liste "non ordonnées"</h4>
+                <h5>Liste à un seul niveau</h5>
+                <ul>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                </ul>
+                <h5>Liste à plusieurs niveaux</h5>
+                <ul>
+                    <li>élément de liste</li>
+                    <li>
+                        élément de liste
+                        <ul>
+                            <li>élément de sous-liste</li>
+                            <li>
+                                élément de sous-liste
+                                <ul>
+                                    <li>élément de sous-sous-liste</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>élément de liste</li>
+                </ul>
+                <h4>Les liste "ordonnées"</h4>
+                <h5>Listes à un seul niveau</h5>
+                <ol>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                </ol>
+                <ol type="I">
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                </ol>
+                <ol type="a" reversed>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                    <li>élément de liste</li>
+                </ol>
+                <h5>Liste à plusieurs niveaux</h5>
+                <ol>
+                    <li>élément de liste</li>
+                    <li>
+                        élément de liste
+                        <ol type="a">
+                            <li>élément de sous-liste</li>
+                            <li>
+                                élément de sous-liste
+                                <ul>
+                                    <li>élément de sous-sous-liste</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>élément de liste</li>
+                </ol>
+                <p>
+                    Maintenant j'interromp la liste par un paragraphe et je reprends la liste
+                </p>
+                <ol start="4">
+                    <li>élément de liste</li>
+                </ol>
+                <h3>Les "listes" descriptives</h3>
+                <dl>
+                    <dt>Élémént a décrire</dt>
+                    <dd>Description de l'élémént</dd>
+                    
+                    <dt>Second élémént a décrire</dt>
+                    <dd>Description de l'élémént</dd>
+                </dl>
+                <h3>Les blocs de citations</h3>
+                <blockquote>
+                    La balise <code>&lt;blockquote&gt;</code> met en exergue son contenu, en appliquant des marges extérieurs à gauche et à droite. 
+                </blockquote>
+                <p>
+                    Mais pour une citation sémantiquement propre pour le référencement et aussi les normes d'écriture du HTML, il est fortement conseillé d'utiliser les balises de citations suivantes en complément :<br />
+                    <code>&lt;cite&gt;</code> et <code>&lt;q&gt;</code>
+                </p>
+                <blockquote>
+                    <p>
+                        <q cite="https://fr.wikiquote.org/wiki/Terry_Pratchett#Au_guet_!,_1989">Si les clichés deviennent des clichés, c'est qu'ils sont les marteaux et les tournevis dans la boîte à outils de la communication</q>
+                    </p>
+                    <p>
+                        <cite>
+                            Au guet ! (1989), Terry Pratchette (trad. Patrick Couton), éd. L'Atalante, 1997
+                        </cite>
+                    </p>
+                </blockquote>
             </article>
             <article>
                 <header>
@@ -57,4 +168,5 @@
 
     </footer>
 </body>
+
 </html>

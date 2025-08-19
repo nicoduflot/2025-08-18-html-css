@@ -1,0 +1,44 @@
+/*
+Commentaires en CSS
+
+Le CSS du navigateur sera surchargé (on remplace les style imposé par le navigateur) ou complémenté (des styles non imposés ou non existant dans le navigateur) par le CSS écrit ici sur les document HTML qui se lieront avec.
+
+pour ajouter du stye à un élément, il faut trouver son "sélecteur", un sélecteur est une chaîne de caractère qui permet de définir un ou plusieurs élément
+
+    Exemple 1 : sélécteurs utilisant les balises 
+        p => tous les paragraphes, où qu'ils soient, du document
+        
+        article p => tous les paragraphes à condition qu'ils aient un ancètre <article>
+            <article>
+                <header>
+                    <h2>titre</h2>
+                    <p>ce paragraphe applique</p>
+                </header>
+                <h3>titre de partie</h3>
+                <p>
+                    ce paragraphe applique
+                </p>
+            </article>
+        
+        article > p => tous les paragraphes à condition qu'ils soient enfant directs d'un élément <article>
+            <article>
+                <header>
+                    <h2>titre</h2>
+                    <p>ce paragraphe n'applique pas (petit enfant d'article)</p>
+                </header>
+                <h3>titre de partie</h3>
+                <p>
+                    ce paragraphe applique, enfant d'article
+                </p>
+            </article>
+
+Le CSS est un style en cascade, c'est à dire que les proriétés de stylé déclarées dans une éléments seront généralement héritées par les élément enfants, sauf ci l'élément a un définition du style hérité
+    exemple : 
+        on impose arial en police à la balise body, tous les éléments sans police spécifiée dans le css du navigateur l'appliqueront, des balises telles que <code> elles garderont la police définit à la racine (c'est à dire la feuile de style user agent, celle du navigateur)
+
+Il est possible toutefois de surcharger (transformer) la racine, on utilisera le sélecteur :root
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}

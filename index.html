@@ -151,16 +151,19 @@
                 </blockquote>
                 <h3>Les tableaux HTML</h3>
                 <style>
-                    #exempleTableau{
+                    #exempleTableau, #tableauSimple{
                         border-collapse: collapse;
                     }
 
-                    #exempleTableau td,
-                    #exempleTableau th{
+                    #exempleTableau td, #tableauSimple td,
+                    #exempleTableau th, #tableauSimple th{
                         border: 1px solid black;
                     }
                 </style>
                 <table id="exempleTableau">
+                    <caption>
+                        Exemple de tableau
+                    </caption>
                     <thead>
                         <tr>
                             <th>Entête</th>
@@ -175,7 +178,7 @@
                             <td colspan="2">l1 - c1</td>
                             <td>l1 - c2</td>
                             <td>l1 - c3</td>
-                            <td>l1 - c4</td>
+                            <td>l1 - c4 grande case</td>
                         </tr>
                         <tr>
                             <td rowspan="2">l2 - c1</td>
@@ -211,6 +214,29 @@
                             <th>Entête</th>
                         </tr>
                     </tfoot>
+                </table>
+                <p>
+                    tableau plus simple
+                </p>
+                <table id="tableauSimple">
+                    <tr>
+                        <th style="border: none"></th>
+                        <th>Petits pains</th>
+                        <th>Petits pains</th>
+                        <th>Petits pains</th>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td>01</td>
+                        <td>02</td>
+                        <td>03</td>
+                    </tr>
+                    <tr>
+                        <th>Valeur en %</th>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>20</td>
+                    </tr>
                 </table>
             </article>
             <article>
@@ -254,6 +280,10 @@
                 <header>
                     <h2>Mise à "0" du CSS3</h2>
                 </header>
+                <h3>Les polices de caractères</h3>
+                <p>
+                    La police par défaut des navigateur est faîte pour de l'impression directe, avec empâtement (type Times New Roman), en revanche, sur des écran rétro-éclairés il sera plus confortable d'utiliser une police sans empâtement (type arial ou helvetica)
+                </p>
             </article>
             <article>
                 <header>

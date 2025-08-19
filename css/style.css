@@ -31,6 +31,63 @@ pour ajouter du stye à un élément, il faut trouver son "sélecteur", un séle
                     ce paragraphe applique, enfant d'article
                 </p>
             </article>
+    
+    Exemple 2 : sélecteurs utilsants des identifiants
+        ces sélecteurs permettent de viser un élément contenant un attribut id. Quand un attribut id est ajouté à un élément, il doit être unique sur toute la page.
+
+        #balises-html-de-contenu-texte => l'élément ayant comme attribut id="balises-html-de-contenu-texte"
+            <h2 id="balises-html-de-contenu-texte">Balises HTML de contenu texte</h2>
+        #entête-de-page h1 => le titre h1 ayant au moins un ancètre avec l'id entête-de-page
+            <header id="entête-de-page">
+                <h1>Introduction au HTML - CSS3</h1>
+            </header>
+        #contenu-principal ul => toutes les listes ayant au moins un ancètre avec l'id #contenu-principal
+    Exemple 4 : sélecteur utilisant les classes CSS
+        le ou les éléments ayant la ou les classes CSS exprimées dans l'attribut class
+
+        .exemple-selecteur-classes => les ou les éléments ayant class="exemple-selecteur-classes" 
+            <p class="exemple-selecteur-classes">
+                Mon petit garçon est malade.
+            </p>
+
+        .exemple-selecteur-classes .actif => un élement avec la classe actif ayant pour ancètre un élément avec la classe exemple-selecteur-classes
+            <p class="exemple-selecteur-classes">
+                <b>Mon petit <span class="actif">garçon</span> est malade.<b>
+            </p>
+        .exemple-selecteur-classes > .actif => un élement avec la classe actif ayant pour parent direct un élément avec la classe exemple-selecteur-classes
+            <p class="exemple-selecteur-classes">
+                Mon petit <span class="actif">garçon</span> est malade.
+            </p>
+            => span appliquera les styles
+
+            <p class="exemple-selecteur-classes">
+                <b>Mon petit <span class="actif">garçon</span> est malade.<b>
+            </p>
+            => span n'appliquera pas les style car son parent direct est <b> et non un élément avec la classe exemple-selecteur-classes
+
+        .exemple-selecteur-classes.actif => un élement avec la classe actif ET avec avec la classe exemple-selecteur-classes
+            <p class="actif exemple-selecteur-classes">
+                garçon est malade.<b>
+            </p>
+            => applique
+            <p class="exemple-selecteur-classes actif">
+                garçon est malade.<b>
+            </p>
+            => applique
+
+            <p class="actif">
+                garçon est malade.<b>
+            </p>
+            => n'applique pas
+
+            <p class="exemple-selecteur-classes">
+                garçon est malade.<b>
+            </p>
+            => n'applique pas
+    
+    exemple de "copier le sélector" dans les outils de développement de chrome
+        #contenu-principal > section:nth-child(2) > article:nth-child(1) > ol:nth-child(20) > li:nth-child(2) > ol > li:nth-child(2) > ul > li
+        ol > li > ol > li > ul > li
 
 Le CSS est un style en cascade, c'est à dire que les proriétés de stylé déclarées dans une éléments seront généralement héritées par les élément enfants, sauf ci l'élément a un définition du style hérité
     exemple : 

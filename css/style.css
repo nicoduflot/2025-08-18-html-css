@@ -114,17 +114,52 @@ vw & vh =>  vw : viewport width (largeur de la surface d'affichage du site)
 
 */
 
+/* Déclaration générales */
+/* Emplacement du root : déclarations de surcharge de la feuille de style user agent */
+
 :root{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem; /* sur chrome 16px * (20%16px) => 19.2px */
     line-height: 1.5rem;
+    scroll-behavior: smooth;
 }
 
+/* Sélecteur "universel" */
 /* "*" est un sélecteur "universel", il représente TOUS les éléments de la page qui est liée au fueillet CSS */
 *{
     box-sizing: border-box;
 }
 
+img{
+    
+}
+
+/* déclaration des classes */
+
+
+
+/* déclarations de structure */
+
 body{
     margin: 0;
 }
+
+body > header,
+body > footer{
+
+}
+
+main{
+
+}
+
+main section{
+
+}
+
+main article{
+
+}
+
+/* Déclaration css adaptatif : media queries */
+

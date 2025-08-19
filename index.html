@@ -25,16 +25,26 @@
     </header>
     <nav>
         <ul>
-            <li><a href="./index.html" title="Introduction au HTML">Introduction</a></li>
+            <li><a href="./index.html" title="Introduction au HTML" target="_self">Introduction</a></li>
             <li><a href="./media.html" title="Ajouter des media sur une page">Media</a></li>
             <li><a href="./contact.html" title="Ajouter un formulaire sur une page">Contact</a></li>
-            <li><a href="./exercice-01.html" title="Mise en pratique">Exercice</a></li>
+            <li><a href="./exercice-01.html" title="Mise en pratique" target="_blank">Exercice</a></li>
         </ul>
     </nav>
     <main id="contenu-principal">
         <header id="entête-de-page">
             <h1>Introduction au HTML - CSS3</h1>
         </header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#balises-html-de-contenu-texte">Balises HTML de contenu texte</a></li>
+                    <li><a href="#balises-html-de-modification-du-texte">Balises HTML de modification du texte</a></li>
+                    <li><a href="#mise-a-0-du-css3">Mise à "0" du CSS3</a></li>
+                    <li><a href="#dimension-web-en-css3">Dimension web en CSS3</a></li>
+                </ul>
+            </nav>
+        </aside>
         <section>
             <article>
                 <header>
@@ -241,7 +251,7 @@
             </article>
             <article>
                 <header>
-                    <h2>Balises HTML de modification du texte</h2>
+                    <h2 id="balises-html-de-modification-du-texte">Balises HTML de modification du texte</h2>
                 </header>
                 <h3>Taille, police et couleur du texte</h3>
                 <p>
@@ -278,7 +288,7 @@
         <section>
             <article>
                 <header>
-                    <h2>Mise à "0" du CSS3</h2>
+                    <h2 id="mise-a-0-du-css3">Mise à "0" du CSS3</h2>
                 </header>
                 <h3>Les polices de caractères</h3>
                 <p>
@@ -311,7 +321,7 @@
             </article>
             <article>
                 <header>
-                    <h2>Dimension web en CSS3</h2>
+                    <h2 id="dimension-web-en-css3">Dimension web en CSS3</h2>
                 </header>
                 <p>
                     Par défaut dans le css user agent (css du navigateur), quand on donne une taille (hauteur ou largeur) à un élément, la taille est calculée par rapport au contenu de l'élément, c'est à dire qu'elle ne prend pas en compte la taille des marges intérieures (padding) ou de la largeur des bordures.
@@ -325,6 +335,42 @@
                     Pour changer cela, il faut utiliser le sélecteur universel
                 </p>
                 <div style="width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;"></div>
+            </article>
+            <article>
+                <header>
+                    <h2 id="les-positions">Les positions</h2>
+                </header>
+                <p>
+                    La propriété position permet d'afficher à l'écran des éléments ailleurs que là où ils sont déclarés
+                    dans le fichier HTML.
+                </p>
+                <p>
+                    les valeurs :
+                </p>
+                <ul>
+                    <li>
+                        static : par défaut pour les éléments
+                    </li>
+                    <li>
+                        Relative : l'élément est à sa position déclarée mais peut être décalé à l'aide des propriétés de
+                        type top, bottom, le décalage n'a pas d'impact sur les éléments suivants
+                    </li>
+                    <li>
+                        absolute : l'élément n'a plus de "contenance", les éléments suivants passeront "au travers" ou
+                        "en-dessous". Les propriétés de type top, bottomm... le placeront par rapport à son élément
+                        parent
+                    </li>
+                    <li>
+                        fixed : l'élément n'a plus de "contenance", les éléments suivants passeront "au travers" ou
+                        "en-dessous". Il est positionné par rapport au viewport et ne bougera pas quel que soit le
+                        défilement de la page.
+                    </li>
+                    <li>
+                        sticky : l'élément est tout d'abord placé selon son élément parent, mais lors du défillement
+                        vers le bas, bougera jusqu'à la déisparition du viewport de l'élément parent, ensuite, il reste
+                        en haut du viewport avec le décalage indiqué par rapport à son élément parent.
+                    </li>
+                </ul>
             </article>
         </section>
     </main>

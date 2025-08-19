@@ -6,11 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*
+        sélécteur sans rien devant (ni "." ni "#") sélcteur de balise
+        sélecteur avec un "#" devant : sélecteur selon l'attribut id d'un élément
+        sélecteur avec un "." devant : sélecteur de classes
+        */
+
+        /* tous les éléments de la page */
         * {
             margin: 1rem;
             padding: 1rem;
             border: 1px solid black;
         }
+
+        /* tous les articles */
+        article{
+            background-color: aliceblue;
+        }
+
+        /* la section avec l'id "mis-en-avant" */
+        #mis-en-avant{
+            background-color: cornsilk;
+        }
+
+        /* un élément avecla lasse "premier-article" */
+        .premier-article{
+            border-color: darkred;
+        }
+
+        /* un article avec la classe "premier-article" dans la section avec l'id "mis-en-avant" */
+        section#mis-en-avant article.premier-article{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /*
+        
+        - mettre la police de caractère arial, helvetica, sans-serif par défaut
+            font-family: Arial, Helvetica, sans-serif;
+        - augmenter la taille de la police
+            font-size: 1.2rem; 
+        - augmenter la hauteur de ligne
+            line-height: 1.5rem;
+
+        - mettre la couleur de fond bisque au header et au footer de body
+            background-color : bisque;
+        
+        */
     </style>
 </head>
 
@@ -27,12 +68,17 @@
     </nav>
     <main>
         main
-        <section>
+        <section id="mis-en-avant">
             section
+            <article class="premier-article">article</article>
+            <article>article</article>
             <article>article</article>
         </section>
         <section>
             section
+            <article class="premier-article">article</article>
+            <article>article</article>
+            <article>article</article>
             <article>article</article>
         </section>
     </main>

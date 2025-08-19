@@ -94,10 +94,37 @@ Le CSS est un style en cascade, c'est à dire que les proriétés de stylé déc
         on impose arial en police à la balise body, tous les éléments sans police spécifiée dans le css du navigateur l'appliqueront, des balises telles que <code> elles garderont la police définit à la racine (c'est à dire la feuile de style user agent, celle du navigateur)
 
 Il est possible toutefois de surcharger (transformer) la racine, on utilisera le sélecteur :root
+
+Unités de tailles en CSS (en web)
+
+Unités les plus souvent utilisées en web
+
+px      =>  pixel il est possible de mesure avec des virgules, 23.8px)
+em      =>  cadratin. Historiquement unité de mesure en print sur les presses.
+            Le cadratin se calcul par rapport à la taille du parent
+rem     =>  cadratin racine, lui se calculera toujours depuis la taille racine du cadratin, 
+            - soit celle du navigateur 
+            - soit celle surchargée dans le :root
+%       =>  La taille définie en % se calcule par rapport à l'espace disponible autour de l'élément définie en %
+vw & vh =>  vw : viewport width (largeur de la surface d'affichage du site)
+            vh : viewport height ( hauteur d'affichage du site)
+            50vh => 50% de la taille d'affichage du site
+            si la largeur d'affichage du site 360px (100vw)
+            50vw = 180px
+
 */
 
 :root{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem; /* sur chrome 16px * (20%16px) => 19.2px */
     line-height: 1.5rem;
+}
+
+/* "*" est un sélecteur "universel", il représente TOUS les éléments de la page qui est liée au fueillet CSS */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
 }

@@ -313,6 +313,18 @@
                 <header>
                     <h2>Dimension web en CSS3</h2>
                 </header>
+                <p>
+                    Par défaut dans le css user agent (css du navigateur), quand on donne une taille (hauteur ou largeur) à un élément, la taille est calculée par rapport au contenu de l'élément, c'est à dire qu'elle ne prend pas en compte la taille des marges intérieures (padding) ou de la largeur des bordures.
+                </p>
+                <p>
+                    le calcul des "boîtes" est en fait mis par défaut à la valeur "content-box"
+                </p>
+                <div style="box-sizing: content-box; width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;"></div>
+                <div style="box-sizing: border-box; width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;"></div>
+                <p>
+                    Pour changer cela, il faut utiliser le sélecteur universel
+                </p>
+                <div style="width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;"></div>
             </article>
         </section>
     </main>

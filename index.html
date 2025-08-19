@@ -284,6 +284,30 @@
                 <p>
                     La police par défaut des navigateur est faîte pour de l'impression directe, avec empâtement (type Times New Roman), en revanche, sur des écran rétro-éclairés il sera plus confortable d'utiliser une police sans empâtement (type arial ou helvetica)
                 </p>
+                <h4>Les tailles de polices et le problème du em</h4>
+                <p>
+                    Le em représente la taille par défaut d'une police sur la page dans un paragraphe.<br />
+                    Quand on utilise par exemple h1, la taille généralement appliquée par le navigateur est de 2 fois le cadratin
+                </p>
+                <p>
+                    Mais le em pose problème : il se calcul par rapport à la taille de la police du parent le plus proche.
+                </p>
+                <div style="font-size: 2em; border: 1px solid black;padding: 0.5em;">
+                    2em
+                    <div style="font-size: 2em; border: 1px solid black;padding: 0.5em;">
+                        2em
+                    </div>
+                </div>
+                <p>
+                    Pour régler cela, on utilisera le cadratin racine : rem.
+                    Le rem se basera toujours sur la taille du cadratin déclarée à la racine du css de  la page
+                </p>
+                <div style="font-size: 2rem; border: 1px solid black;padding: 0.5rem;">
+                    2rem
+                    <div style="font-size: 2rem; border: 1px solid black;padding: 0.5rem;">
+                        2rem
+                    </div>
+                </div>
             </article>
             <article>
                 <header>

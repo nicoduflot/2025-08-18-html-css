@@ -96,6 +96,8 @@ Le CSS est un style en cascade, c'est à dire que les proriétés de stylé déc
 Il est possible toutefois de surcharger (transformer) la racine, on utilisera le sélecteur :root
 */
 
-body{
+:root{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem; /* sur chrome 16px * (20%16px) => 19.2px */
+    line-height: 1.5rem;
 }

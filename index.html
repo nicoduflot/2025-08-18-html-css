@@ -482,11 +482,11 @@
                     <div style="display: inline-block;float: left;padding: 0.5rem;">
                         toto
                     </div>
-                    <div style="display:;float: left;padding: 0.5rem;">
+                    <div style="display: inline-block;float: left;padding: 0.5rem;">
                         toto
                     </div>
                 </div>
-                <h4>Display inline et block sur deux span</h4>
+                <h4 style="clear: both;">Display inline et block sur deux span</h4>
                 <p style="clear: both;">
                     Lorem, ipsum dolor sit amet <span style="display: inline; background-color: rgb(156, 202, 242);">consectetur</span> adipisicing elit. Pariatur distinctio harum nobis quaerat a sapiente <span style="display: block; background-color: rgb(156, 202, 242);">consectetur</span>consequuntur</p> quod. Error exercitationem minima sit magni qui dolorem impedit, nulla quae doloremque debitis pariatur.
                 </p>
@@ -538,11 +538,66 @@
                     <div class="div-flex">toto-07</div>
                     <div class="div-flex">toto-08</div>
                     <div class="div-flex">toto-09</div>
-                    <div class="div-flex">toto-10</div>
+                    <div class="div-flex">toto-10 lore</div>
                     <div class="div-flex">toto-11</div>
                     <div class="div-flex">toto-12</div>
                     <div class="div-flex">toto-13</div>
                     <div class="div-flex">toto-14</div>
+                </div>
+                <h3>display grid</h3>
+                <style>
+                    .exemple-grid{
+                        padding: 0.5rem;
+                        border: 1px solid black;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 0.5rem;
+                    }
+
+                    .div-grid{
+                        border: 1px solid black;
+                        padding: 0.5rem;
+                    }
+
+                    @media(min-width: 700px){
+                        .exemple-grid{
+                            grid-template-columns: 1fr 1fr;
+                        }
+                    }
+                    @media(min-width: 1000px){
+                        .exemple-grid{
+                            grid-template-columns: 1fr 1fr 1fr;
+                        }
+                    }
+                    @media(min-width: 1200px){
+                        .exemple-grid{
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                        }
+
+                        .span-col-2{
+                            grid-column: span 2;
+                        }
+
+                        .grid-row-2{
+                            grid-row: span 2;
+                        }
+                    }
+                </style>
+                <div class="exemple-grid">
+                    <div class="div-grid">toto-01</div>
+                    <div class="div-grid">toto-02</div>
+                    <div class="div-grid">toto-03</div>
+                    <div class="div-grid">toto-04</div>
+                    <div class="div-grid">toto-05</div>
+                    <div class="div-grid">toto-06</div>
+                    <div class="div-grid">toto-07</div>
+                    <div class="div-grid">toto-08</div>
+                    <div class="div-grid">toto-09</div>
+                    <div class="div-grid grid-row-2">toto-10</div>
+                    <div class="div-grid span-col-2">toto-11</div>
+                    <div class="div-grid">toto-12</div>
+                    <div class="div-grid">toto-13</div>
+                    <div class="div-grid">toto-14</div>
                 </div>
             </article>
         </section>

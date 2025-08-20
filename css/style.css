@@ -163,7 +163,8 @@ img{
 }
 
 .container{
-    width: 90%;
+    width: 100%;
+    margin: 0;
     margin-right: auto;
     margin-left: auto;
 }
@@ -180,7 +181,7 @@ body > footer{
 }
 
 main{
-    padding: 0.5rem;
+    
 }
 
 main section{
@@ -193,3 +194,30 @@ main article{
 
 /* Déclaration css adaptatif : media queries */
 
+/* quand on imprime les pages du site */
+@media print{
+    body > header,
+    body > nav, 
+    body > footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+}
+
+/*
+Selon les points de ruptures calculés par bootstrap, écrire les media-queries manquantes pour la classe container
+<576px	≥576px 	≥768px 	≥992px 	≥1200px 	≥1400px
+100%	540px	720px	960px	1140px		1320px
+
+*/

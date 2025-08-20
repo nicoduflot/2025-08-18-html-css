@@ -44,6 +44,7 @@
                     <li><a href="#balises-html-de-modification-du-texte">Balises HTML de modification du texte</a></li>
                     <li><a href="#mise-a-0-du-css3">Mise à "0" du CSS3</a></li>
                     <li><a href="#dimension-web-en-css3">Dimension web en CSS3</a></li>
+                    <li><a href="#le-css-adaptatif">Le CSS adaptatif</a></li>
                 </ul>
             </nav>
         </aside>
@@ -431,6 +432,30 @@
                     <div class="carre-rouge"></div>
                     <div class="carre-vert"></div>
                 </div>
+            </article>
+            <article>
+                <header>
+                    <h2 id="le-css-adaptatif">Le CSS adaptatif</h2>
+                </header>
+                <p>
+                    Le CSS dit adaptatif (ou plus communément appelé RWD - Responsive Web Design) permet d'adapter l'affichage d'un sur selon l'appareil utilisé.
+                </p>
+                <p>
+                    Donc, un site s'affichant correctement sur smartphone (en prenant en compte la lisibilité et l'accessibilité) doit pouvoir s'adatper sous une forme différente sur des écrans plus grands (talette ou PC)
+                </p>
+                <p>
+                    Pour ce faire, on va écrire dans le CSS des surcharges ou des nouvelles règles CSS quand la largeur de l'écran atteint ou dépasse un largeur définie, en utilisant les <code>media queries</code>
+                </p>
+                <h3>Les media-queries</h3>
+                <p>
+                    Les media queries permettent de surcharger ou d'ajouter des comportements CSS par rapport, entre autres, à l'affichage du site sur l'appareil : largeur d'affichage  (viewport), l'orientation (portrait ou paysage), etc.
+                </p>
+                <p>
+                    Il est recommandé d'écrire le CSS d'un site en smartphone-first. La plupart des visiteurs de site naviguent à l'aide d'un smartphone. De plus le CSS de base sans media-queries est déstiné uniquement à l'affichage sur smartphone. Cela permet d'écrire quasiement tout le CSS d'un site, les surcharges ou ajouts de CSS dans les media-queries ne représentant qu'une partie infime du fichier CSS total.
+                </p>
+                <p>
+                    Si on fait la mise en page en premier lieu pour un écran plus grand, les réécriture et surcharge de CSS seront beaucoup plus importante, ce qui génèrera un fichier CSS très gros et surtout très difficile à maintenir.
+                </p>
             </article>
         </section>
     </main>

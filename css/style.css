@@ -1,3 +1,8 @@
+/* Il est posible d'importer d'autres fichiers CSS dans un fichier css, mais ces imports doivent se faire absolument dans les premières lignes du fichiers, sans déclarations css avant. les commentaires en revanche peuvent être présent */
+
+@import url('./bootstrap-icons.css');
+@import url('./LazenbyCompSmooth.css');
+
 /*
 Commentaires en CSS
 
@@ -122,6 +127,8 @@ vw & vh =>  vw : viewport width (largeur de la surface d'affichage du site)
     font-size: 1.2rem; /* sur chrome 16px * (20%16px) => 19.2px */
     line-height: 1.5rem;
     scroll-behavior: smooth;
+    --site-title-font-size: 2.5rem;
+    --site-title-font-family: 'LazenbyCompSmooth';
 }
 
 /* Sélecteur "universel" */
@@ -136,7 +143,16 @@ img{
 
 /* déclaration des classes */
 
+.titre-site{
+    font-family: var(--site-title-font-family);
+    font-size: var(--site-title-font-size);
+}
 
+.go-top{
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
 
 /* déclarations de structure */
 
@@ -150,7 +166,7 @@ body > footer{
 }
 
 main{
-
+    padding: 0.5rem;
 }
 
 main section{

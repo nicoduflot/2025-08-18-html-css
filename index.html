@@ -10,25 +10,25 @@
     <!-- Lier les fichiers CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Intégrer les fichier javascript -->
-    
+
     <!-- balise style si besoin -->
     <style>
 
     </style>
 </head>
 
-<body>
+<body id="top">
     <header>
         <div>
-            <span>Formation HTML - CSS3</span>
+            <span class="titre-site">Formation HTML - CSS3</span>
         </div>
     </header>
     <nav>
         <ul>
-            <li><a href="./index.html" title="Introduction au HTML" target="_self">Introduction</a></li>
-            <li><a href="./media.html" title="Ajouter des media sur une page">Media</a></li>
-            <li><a href="./contact.html" title="Ajouter un formulaire sur une page">Contact</a></li>
-            <li><a href="./exercice-01.html" title="Mise en pratique" target="_blank">Exercice</a></li>
+            <li><a href="./index.html" title="Introduction au HTML" target="_self"><i class="bi bi-house-door"></i> Introduction</a></li>
+            <li><a href="./media.html" title="Ajouter des media sur une page"><i class="bi bi-film"></i> Media</a></li>
+            <li><a href="./contact.html" title="Ajouter un formulaire sur une page"><i class="bi bi-envelope-paper"></i> Contact</a></li>
+            <li><a href="./exercice-01.html" title="Mise en pratique" target="_blank"><i class="bi bi-tools"></i> Exercice</a></li>
         </ul>
     </nav>
     <main id="contenu-principal">
@@ -67,7 +67,8 @@
                 </p>
                 <h3>Les listes</h3>
                 <p>
-                    Les listes sont équivalentes aux paragraphes dans la hièrarchie des balises. Il faut donc les déclarer à l'extérieur des paragraphes
+                    Les listes sont équivalentes aux paragraphes dans la hièrarchie des balises. Il faut donc les
+                    déclarer à l'extérieur des paragraphes
                 </p>
                 <h4>Les liste "non ordonnées"</h4>
                 <h5>Liste à un seul niveau</h5>
@@ -137,21 +138,25 @@
                 <dl>
                     <dt>Élémént a décrire</dt>
                     <dd>Description de l'élémént</dd>
-                    
+
                     <dt>Second élémént a décrire</dt>
                     <dd>Description de l'élémént</dd>
                 </dl>
                 <h3>Les blocs de citations</h3>
                 <blockquote>
-                    La balise <code>&lt;blockquote&gt;</code> met en exergue son contenu, en appliquant des marges extérieurs à gauche et à droite. 
+                    La balise <code>&lt;blockquote&gt;</code> met en exergue son contenu, en appliquant des marges
+                    extérieurs à gauche et à droite.
                 </blockquote>
                 <p>
-                    Mais pour une citation sémantiquement propre pour le référencement et aussi les normes d'écriture du HTML, il est fortement conseillé d'utiliser les balises de citations suivantes en complément :<br />
+                    Mais pour une citation sémantiquement propre pour le référencement et aussi les normes d'écriture du
+                    HTML, il est fortement conseillé d'utiliser les balises de citations suivantes en complément :<br />
                     <code>&lt;cite&gt;</code> et <code>&lt;q&gt;</code>
                 </p>
                 <blockquote>
                     <p>
-                        <q cite="https://fr.wikiquote.org/wiki/Terry_Pratchett#Au_guet_!,_1989">Si les clichés deviennent des clichés, c'est qu'ils sont les marteaux et les tournevis dans la boîte à outils de la communication</q>
+                        <q cite="https://fr.wikiquote.org/wiki/Terry_Pratchett#Au_guet_!,_1989">Si les clichés
+                            deviennent des clichés, c'est qu'ils sont les marteaux et les tournevis dans la boîte à
+                            outils de la communication</q>
                     </p>
                     <p>
                         <cite>
@@ -161,12 +166,15 @@
                 </blockquote>
                 <h3>Les tableaux HTML</h3>
                 <style>
-                    #exempleTableau, #tableauSimple{
+                    #exempleTableau,
+                    #tableauSimple {
                         border-collapse: collapse;
                     }
 
-                    #exempleTableau td, #tableauSimple td,
-                    #exempleTableau th, #tableauSimple th{
+                    #exempleTableau td,
+                    #tableauSimple td,
+                    #exempleTableau th,
+                    #tableauSimple th {
                         border: 1px solid black;
                     }
                 </style>
@@ -255,27 +263,40 @@
                 </header>
                 <h3>Taille, police et couleur du texte</h3>
                 <p>
-                    Dans les premières version du HTYML, il existait la balise <code>&lt;font&gt;</code> qui permettait de changer <font size="6" face="Impact" color="darkred">la taille, la police et la couleur d'une section de texte</font>. Mais cette balise n'est plus dans les norme HTML, désormais pour ce genre de manipulation, on créera des classes CSS, qui seront utilisées ponctuellement pour décorer au besoin des section de texte. 
+                    Dans les premières version du HTYML, il existait la balise <code>&lt;font&gt;</code> qui permettait
+                    de changer <font size="6" face="Impact" color="darkred">la taille, la police et la couleur d'une
+                        section de texte</font>. Mais cette balise n'est plus dans les norme HTML, désormais pour ce
+                    genre de manipulation, on créera des classes CSS, qui seront utilisées ponctuellement pour décorer
+                    au besoin des section de texte.
                 </p>
                 <style>
-                    .rouge-gras-impact{
+                    .rouge-gras-impact {
                         color: darkred;
                         font-family: Impact;
                         font-size: 2rem;
                     }
                 </style>
                 <p>
-                    On utilise le plus souvent la balise <code>&lt;span&gt;</code>, qui recevra la classe pour changer <span class="rouge-gras-impact">l'apparence du texte</span>. 
+                    On utilise le plus souvent la balise <code>&lt;span&gt;</code>, qui recevra la classe pour changer
+                    <span class="rouge-gras-impact">l'apparence du texte</span>.
                 </p>
                 <h3>Le gras et l'italique</h3>
                 <p>
-                    Pour mettre en gras ou en italique, il existe pour chacun des cas deux balises. Les balises qui ne serve qu'à attirer l'attention du lecteur sont &lt;b&gt; <b>pour le gras</b> et &lt;i&gt; <i>pour l'italique</i>.<br />
-                    Pour attirer l'attention du lecteur ET signifier une importance sémantique qui impacte le référencement, on utilisera &lt;strong&gt; <strong>pour le gras</strong> et l'importance sémantique sur la force du terme et &lt;em&gt; <em>pour l'italique</em> et ajouter de l'emphase à la sémantique du terme. 
+                    Pour mettre en gras ou en italique, il existe pour chacun des cas deux balises. Les balises qui ne
+                    serve qu'à attirer l'attention du lecteur sont &lt;b&gt; <b>pour le gras</b> et &lt;i&gt; <i>pour
+                        l'italique</i>.<br />
+                    Pour attirer l'attention du lecteur ET signifier une importance sémantique qui impacte le
+                    référencement, on utilisera &lt;strong&gt; <strong>pour le gras</strong> et l'importance sémantique
+                    sur la force du terme et &lt;em&gt; <em>pour l'italique</em> et ajouter de l'emphase à la sémantique
+                    du terme.
                 </p>
                 <h3>Le texte spécial</h3>
                 <p>
-                    A la base, le HTML servait principalement pour l'impression directe de son contenu, c'est pour cela qu'il est toujours possible de <u>souligner</u>, <s>de biffer</s> ou de <mark>surligner au fluo du texte</mark>.<br />
-                    On ne souligne jamais en HTML, car les utilisateurs pourraient pense qu'il s'agit d'un hyperlien, et ils pourraient pense qu'il s'agit d'un lien cassé. 
+                    A la base, le HTML servait principalement pour l'impression directe de son contenu, c'est pour cela
+                    qu'il est toujours possible de <u>souligner</u>, <s>de biffer</s> ou de <mark>surligner au fluo du
+                        texte</mark>.<br />
+                    On ne souligne jamais en HTML, car les utilisateurs pourraient pense qu'il s'agit d'un hyperlien, et
+                    ils pourraient pense qu'il s'agit d'un lien cassé.
                 </p>
                 <h3>D'autres balises de mise en forme</h3>
                 <p>
@@ -292,15 +313,19 @@
                 </header>
                 <h3>Les polices de caractères</h3>
                 <p>
-                    La police par défaut des navigateur est faîte pour de l'impression directe, avec empâtement (type Times New Roman), en revanche, sur des écran rétro-éclairés il sera plus confortable d'utiliser une police sans empâtement (type arial ou helvetica)
+                    La police par défaut des navigateur est faîte pour de l'impression directe, avec empâtement (type
+                    Times New Roman), en revanche, sur des écran rétro-éclairés il sera plus confortable d'utiliser une
+                    police sans empâtement (type arial ou helvetica)
                 </p>
                 <h4>Les tailles de polices et le problème du em</h4>
                 <p>
                     Le em représente la taille par défaut d'une police sur la page dans un paragraphe.<br />
-                    Quand on utilise par exemple h1, la taille généralement appliquée par le navigateur est de 2 fois le cadratin
+                    Quand on utilise par exemple h1, la taille généralement appliquée par le navigateur est de 2 fois le
+                    cadratin
                 </p>
                 <p>
-                    Mais le em pose problème : il se calcul par rapport à la taille de la police du parent le plus proche.
+                    Mais le em pose problème : il se calcul par rapport à la taille de la police du parent le plus
+                    proche.
                 </p>
                 <div style="font-size: 2em; border: 1px solid black;padding: 0.5em;">
                     2em
@@ -310,7 +335,7 @@
                 </div>
                 <p>
                     Pour régler cela, on utilisera le cadratin racine : rem.
-                    Le rem se basera toujours sur la taille du cadratin déclarée à la racine du css de  la page
+                    Le rem se basera toujours sur la taille du cadratin déclarée à la racine du css de la page
                 </p>
                 <div style="font-size: 2rem; border: 1px solid black;padding: 0.5rem;">
                     2rem
@@ -324,13 +349,20 @@
                     <h2 id="dimension-web-en-css3">Dimension web en CSS3</h2>
                 </header>
                 <p>
-                    Par défaut dans le css user agent (css du navigateur), quand on donne une taille (hauteur ou largeur) à un élément, la taille est calculée par rapport au contenu de l'élément, c'est à dire qu'elle ne prend pas en compte la taille des marges intérieures (padding) ou de la largeur des bordures.
+                    Par défaut dans le css user agent (css du navigateur), quand on donne une taille (hauteur ou
+                    largeur) à un élément, la taille est calculée par rapport au contenu de l'élément, c'est à dire
+                    qu'elle ne prend pas en compte la taille des marges intérieures (padding) ou de la largeur des
+                    bordures.
                 </p>
                 <p>
                     le calcul des "boîtes" est en fait mis par défaut à la valeur "content-box"
                 </p>
-                <div style="box-sizing: content-box; width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;"></div>
-                <div style="box-sizing: border-box; width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;"></div>
+                <div
+                    style="box-sizing: content-box; width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;">
+                </div>
+                <div
+                    style="box-sizing: border-box; width: 200px; height: 100px; border: 3px solid black; padding: 5px;margin: 5px 0;">
+                </div>
                 <p>
                     Pour changer cela, il faut utiliser le sélecteur universel
                 </p>
@@ -371,12 +403,43 @@
                         en haut du viewport avec le décalage indiqué par rapport à son élément parent.
                     </li>
                 </ul>
+                <h3>Exemple</h3>
+                <style>
+                    .exemple-position{
+                        width: 300px;
+                        height: 300px;
+                        border: 3px solid black;
+                        position: relative;
+                    }
+                    .carre-rouge{
+                        background-color: darkred;
+                        width: 50px;
+                        height: 50px;
+                        position: relative;
+                        top:10px;
+                        left:10px;
+                    }
+                    .carre-vert{
+                        background-color: darkgreen;
+                        width: 50px;
+                        height: 50px;
+                    }
+                </style>
+                <div class="exemple-position">
+                    <div class="carre-rouge"></div>
+                    <div class="carre-vert"></div>
+                </div>
             </article>
         </section>
     </main>
     <footer>
 
     </footer>
+    <div class="go-top">
+        <a href="#top" title="Revenir en haut">
+            <i class="bi bi-arrow-up-square-fill"></i>
+        </a>
+    </div>
 </body>
 
 </html>

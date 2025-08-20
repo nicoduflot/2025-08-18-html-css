@@ -214,7 +214,11 @@ main article{
         width: 720px;
     }
 }
-
+/*
+Selon les points de ruptures calculés par bootstrap, écrire les media-queries manquantes pour la classe container
+<576px	| ≥576px 	|≥768px 	|≥992px 	|≥1200px 	|≥1400px    |≥1600px
+100%	| 540px	    |720px	    |960px	    |1140px		|1320px     |1560px
+*/
 @media screen and (min-width: 992px) {
     .container{
         width: 960px;
@@ -239,8 +243,3 @@ main article{
     }
 }
 
-/*
-Selon les points de ruptures calculés par bootstrap, écrire les media-queries manquantes pour la classe container
-<576px	| ≥576px 	|≥768px 	|≥992px 	|≥1200px 	|≥1400px    |≥1600px
-100%	| 540px	    |720px	    |960px	    |1140px		|1320px     |1560px
-*/

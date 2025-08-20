@@ -456,6 +456,37 @@
                 <p>
                     Si on fait la mise en page en premier lieu pour un écran plus grand, les réécriture et surcharge de CSS seront beaucoup plus importante, ce qui génèrera un fichier CSS très gros et surtout très difficile à maintenir.
                 </p>
+                <h3>la propriété display</h3>
+                <p>
+                    La propriété display permet de contrôler le mode d'affichage d'un élément sur la page et parfois même au sein d'un "flux" de texte, généralement dans un paragraphe.
+                </p>
+                <p>
+                    Les valeurs possibles (liste non exhaustive) : 
+                </p>
+                <ul>
+                    <li>block : l'élément prend toute la largeur disponible et "repousse" les éléments (ou le flux de texte) au dessus (pour ce qui arrive avant) et en dessous (pour ce qui arrive après)</li>
+                    <li>inline : l'élément prend la largeur de son contenur et est intégré ans le flux de texte à la suite</li>
+                    <li>inline-block : compretement semblable au inline, mais généralement utilisé sur des éléments ayant la proriété float d'activée, afin de les aligner côte à côte</li>
+                    <li>None : l'élément n'est tout simplement pas affiché à l'écran</li>
+                    <li>flex : permet d'utiliser les propriétés flexible CSS (principalement utilisées pour le CSS adaptatif)</li>
+                </ul>
+                <div>
+                    <div style="display: inline-block;float: left;padding: 0.5rem;">
+                        toto
+                    </div>
+                    <div style="display: inline-block;float: left;padding: 0.5rem;">
+                        toto
+                    </div>
+                    <div style="display: inline-block;float: left;padding: 0.5rem;">
+                        toto
+                    </div>
+                    <div style="display:;float: left;padding: 0.5rem;">
+                        toto
+                    </div>
+                </div>
+                <p style="clear: both;">
+                    Lorem, ipsum dolor sit amet <span style="display: inline; background-color: rgb(156, 202, 242);">consectetur</span> adipisicing elit. Pariatur distinctio harum nobis quaerat a sapiente <span style="display: block; background-color: rgb(156, 202, 242);">consectetur</span>consequuntur</p> quod. Error exercitationem minima sit magni qui dolorem impedit, nulla quae doloremque debitis pariatur.
+                </p>
             </article>
         </section>
     </main>

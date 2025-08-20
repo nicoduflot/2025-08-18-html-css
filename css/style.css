@@ -129,6 +129,7 @@ vw & vh =>  vw : viewport width (largeur de la surface d'affichage du site)
     scroll-behavior: smooth;
     --site-title-font-size: 2.5rem;
     --site-title-font-family: 'LazenbyCompSmooth';
+    --go-top-link-color: rgba(139,0,0,0.5);
 }
 
 /* Sélecteur "universel" */
@@ -152,6 +153,19 @@ img{
     position: fixed;
     bottom: 0.5rem;
     right: 0.5rem;
+    font-size: 2rem;
+    /*opacity: 0.5; si on n'utilise pas la transparence dans la couleur du lien */
+}
+
+.go-top a{
+    color: var(--go-top-link-color);
+    /* color: rgb(139, 0, 0); si on n'utilise pas la transparence dans la couleur du lien */
+}
+
+.container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* déclarations de structure */

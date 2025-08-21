@@ -26,10 +26,14 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="./index.html" title="Introduction au HTML" target="_self"><i class="bi bi-house-door"></i> Introduction</a></li>
-                <li><a href="./media.html" title="Ajouter des media sur une page"><i class="bi bi-film"></i> Media</a></li>
-                <li><a href="./contact.html" title="Ajouter un formulaire sur une page"><i class="bi bi-envelope-paper"></i> Contact</a></li>
-                <li><a href="./exercice-01.html" title="Mise en pratique" target="_blank"><i class="bi bi-tools"></i> Exercice</a></li>
+                <li><a href="./index.html" title="Introduction au HTML" target="_self"><i class="bi bi-house-door"></i>
+                        Introduction</a></li>
+                <li><a href="./media.html" title="Ajouter des media sur une page"><i class="bi bi-film"></i> Media</a>
+                </li>
+                <li><a href="./contact.html" title="Ajouter un formulaire sur une page"><i
+                            class="bi bi-envelope-paper"></i> Contact</a></li>
+                <li><a href="./exercice-01.html" title="Mise en pratique" target="_blank"><i class="bi bi-tools"></i>
+                        Exercice</a></li>
             </ul>
         </div>
     </nav>
@@ -63,24 +67,34 @@
                     sa largeur, la hauteur qui le ratio (l'homothétie, le rapport hauter / largeur)
                 </p>
                 <p>
-                    Une image peut être appelé dans un paragraphe : <img src="./images/james-white-composite-400w.png" alt="Composition carrée de neuf illustration du graphiste James White" class="img-fluid left" /> ou hors paragraphe.
+                    Une image peut être appelé dans un paragraphe : <img src="./images/james-white-composite-400w.png"
+                        alt="Composition carrée de neuf illustration du graphiste James White" class="img-fluid left" />
+                    ou hors paragraphe.
                 </p>
                 <p class="clear">
-                    Image hors paragraphe : 
+                    Image hors paragraphe :
                 </p>
-                <img src="./images/synthwave-vibe-james-white-signalnoise-w400.png" alt="Illustration d'une moto sur un ciel couchant avec en premier plan un motar dans le style graphique synthwave" class="img-fluid" />
+                <img src="./images/synthwave-vibe-james-white-signalnoise-w400.png"
+                    alt="Illustration d'une moto sur un ciel couchant avec en premier plan un motar dans le style graphique synthwave"
+                    class="img-fluid" />
                 <h3>La balise figure</h3>
                 <p>
-                    Il existe une balise conteneur pour les media, qui aide la sémantique web pour le référencement et l'accessibilité. la balise figure va encadrer un media, et donne la possibilité d'y ajouter une légende, avec la balise figcaption.
+                    Il existe une balise conteneur pour les media, qui aide la sémantique web pour le référencement et
+                    l'accessibilité. la balise figure va encadrer un media, et donne la possibilité d'y ajouter une
+                    légende, avec la balise figcaption.
                 </p>
                 <figure>
-                    <img src="./images/synthwave-vibe-james-white-signalnoise-w400.png" alt="Illustration d'une moto sur un ciel couchant avec en premier plan un motar dans le style graphique synthwave" class="img-fluid" />
+                    <img src="./images/synthwave-vibe-james-white-signalnoise-w400.png"
+                        alt="Illustration d'une moto sur un ciel couchant avec en premier plan un motar dans le style graphique synthwave"
+                        class="img-fluid" />
                     <figcaption>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis facere, quae laboriosam expedita enim ea suscipit illo facilis.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis facere, quae laboriosam expedita
+                        enim ea suscipit illo facilis.
                     </figcaption>
                 </figure>
                 <p>
-                    La légende sera rattachée sémantiquement à l'image et son texte alternatif, ce qui améliorera le référencement.
+                    La légende sera rattachée sémantiquement à l'image et son texte alternatif, ce qui améliorera le
+                    référencement.
                 </p>
             </article>
             <article>
@@ -89,8 +103,9 @@
                 </header>
                 <p>
                     Pour mettre à disposition un fichier audio sur un site, on utlise la balise audio.
-                    Cette balise peut soit appeler un seul fichier, ou utiliser aussi la balise source. 
-                    Utiliser plusieurs sources permet de s'adapter à la configuration de l'utilisateur. Un appareil, pour
+                    Cette balise peut soit appeler un seul fichier, ou utiliser aussi la balise source.
+                    Utiliser plusieurs sources permet de s'adapter à la configuration de l'utilisateur. Un appareil,
+                    pour
                     lire un fichier audio (ou vidéo) doit posséder les bon codecs. Si je met a disposition un fichier
                     avec une extension que l'appareil ne connaît pas, j'aurais une erreur.
                     Si je propose le même son dans des formats différent avec source, l'appareil lancera le premier
@@ -103,12 +118,13 @@
                     </audio>
                     <figcaption>
                         Lire le fichier<br />
-                        <button onclick="playMp3('diablo')">Lecture</button> <button onclick="pauseMp3('diablo')">Pause</button>
+                        <button onclick="playMp3('diablo')">Lecture</button> <button
+                            onclick="pauseMp3('diablo')">Pause</button>
                         <script>
-                            function playMp3(video){
+                            function playMp3(video) {
                                 document.getElementById(video).play();
                             }
-                            function pauseMp3(video){
+                            function pauseMp3(video) {
                                 document.getElementById(video).pause();
                             }
                         </script>
@@ -129,7 +145,8 @@
                     </video>
                     <figcaption>
                         Lire le fichier<br />
-                        <button onclick="playMp3('fallout')">Lecture</button> <button onclick="pauseMp3('fallout')">Pause</button>
+                        <button onclick="playMp3('fallout')">Lecture</button> <button
+                            onclick="pauseMp3('fallout')">Pause</button>
                     </figcaption>
                 </figure>
                 <figure>
@@ -139,19 +156,59 @@
                     </video>
                     <figcaption>
                         Lire le fichier<br />
-                        <button onclick="playMp3('bunny')">Lecture</button> <button onclick="pauseMp3('bunny')">Pause</button>
+                        <button onclick="playMp3('bunny')">Lecture</button> <button
+                            onclick="pauseMp3('bunny')">Pause</button>
                     </figcaption>
                 </figure>
             </article>
             <article>
                 <header>
-                    <h2 id="iframe">Les images</h2>
+                    <h2 id="iframe">L'iframe</h2>
                 </header>
+                <p>
+                    L'élément iframe permet d'inserrer une page internet dans le document, mais pas que, il est possible
+                    d'inserrer d'autre type de fichier, par exemple des pdf ou directement des fichier vidéo, sons, etc.
+                </p>
+                <p>
+                    L'iframe permet aussi d'afficher des ressources à l'intérieur depuis la page qui la contient
+                </p>
+                <ul>
+                    <li><a href="./documents/PP3.pdf" target="document">PP3</a></li>
+                    <li><a href="./documents/uxpin_web_ui_design_for_the_human_eye_1.pdf" target="document">UXPIN</a>
+                    </li>
+                    <li><a href="./exercice-01.html" target="document">Exercice</a></li>
+                    <li><a href="https://geo.dailymotion.com/player.html?video=xs584" target="document">Vidéo</a></li>
+                </ul>
+                <iframe name="document" width="100%" height="300" src="./exercice-01.html">
+                </iframe>
             </article>
             <article>
                 <header>
-                    <h2 id="video-et-audio-hors-site">Les images</h2>
+                    <h2 id="video-et-audio-hors-site">Les vidéos et l'audio hébergés sur d'autres site</h2>
                 </header>
+                <h3>Les vidéos</h3>
+                <figure class="video-16-9">
+                    <iframe src="https://www.youtube.com/embed/EXpF9FEWnNM?si=a75XT-UUZQEZma0w"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
+                </figure>
+                <figure class="video-16-9">
+                    <iframe src="https://geo.dailymotion.com/player.html?video=xs584" allowfullscreen title="Dailymotion Video Player" allow="web-share">
+                    </iframe>
+                </figure>
+                <figure class="video-4-3">
+                    <iframe src="./documents/A4-portrait-hex-0.5-inches-paper.pdf" >
+                    </iframe>
+                </figure>
+                <h3>L'audio</h3>
+                <p>
+                    Même principe que pour les site de vidéo, en revanche l'adaptatif est généralement déjà intégré aux iframes proposées
+                </p>
+                <h4>Bandcamp</h4>
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3828771716/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://weswaltz.bandcamp.com/album/more-is-more">More Is More de Wes Waltz</a></iframe>
+                <h4>Spotify</h4>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2awRM5ndShRtSjR1EEyPk8?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </article>
         </section>
     </main>

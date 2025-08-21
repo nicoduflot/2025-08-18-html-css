@@ -193,9 +193,17 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    
                 </figure>
-                <figure class="video-16-9">
-                    <iframe src="https://geo.dailymotion.com/player.html?video=xs584" allowfullscreen title="Dailymotion Video Player" allow="web-share">
-                    </iframe>
+                <p>
+                    Le seul soucis dans cette adaptation c'est que si on met une légende à l'intérieur de la balise figure, elle sera cachée par la vidéo. Pour contrer cela, il faudra mettre la classe CSS de la vidéo dans une div qui encadrera l'iframe, à l'intérieur de la balise figure.
+                </p>
+                <figure>
+                    <div class="video-16-9">
+                        <iframe src="https://geo.dailymotion.com/player.html?video=xs584" allowfullscreen title="Dailymotion Video Player" allow="web-share">
+                        </iframe>
+                    </div>
+                    <figcaption>
+                        Ma préférée de Mozinor
+                    </figcaption>
                 </figure>
                 <figure class="video-4-3">
                     <iframe src="./documents/A4-portrait-hex-0.5-inches-paper.pdf" >

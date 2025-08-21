@@ -132,6 +132,10 @@ vw & vh =>  vw : viewport width (largeur de la surface d'affichage du site)
     --site-title-font-size: 2.5rem;
     --site-title-font-family: 'LazenbyCompSmooth';
     --go-top-link-color: rgba(139,0,0,0.5);
+    --site-bg-color: #F2F2F2;
+    --site-header-bg: #84C25A;
+    --site-nav-bg: #84C25A;
+    --site-footer-bg: #84C25A;
 }
 
 /* Sélecteur "universel" */
@@ -196,6 +200,7 @@ select{
 .titre-site{
     font-family: var(--site-title-font-family);
     font-size: var(--site-title-font-size);
+    line-height: calc( var(--site-title-font-size)*1.1 );
 }
 
 .go-top{
@@ -263,11 +268,13 @@ select{
 
 body{
     margin: 0;
+    background-color: var(--site-bg-color);
 }
 
 body > header,
+body > nav,
 body > footer{
-
+    background-color: var(--site-header-bg);
 }
 
 main{

@@ -138,8 +138,12 @@ vw & vh =>  vw : viewport width (largeur de la surface d'affichage du site)
     box-sizing: border-box;
 }
 
-img{
-    
+figure{
+    text-align: center;
+}
+
+figure figcaption{
+    text-align: left;
 }
 
 /* déclaration des classes */
@@ -167,6 +171,22 @@ img{
     margin: 0;
     margin-right: auto;
     margin-left: auto;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
 }
 
 /* déclarations de structure */

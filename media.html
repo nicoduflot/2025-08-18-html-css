@@ -49,7 +49,60 @@
             </nav>
         </aside>
         <section>
-            
+            <article>
+                <header>
+                    <h2 id="les-images">Les images</h2>
+                </header>
+                <p>
+                    Les images peuvent être affichées à l'aide de deux balises : img et picture
+                </p>
+                <h3>img</h3>
+                <p>
+                    img est une balise qui une fois écrite, va aller chercher l'image source et l'afficher à sa place.
+                    Si rien d'autre n'est précisé, l'image s'affiche à sa taille originale. Si on change, par exemple,
+                    sa largeur, la hauteur qui le ratio (l'homothétie, le rapport hauter / largeur)
+                </p>
+                <p>
+                    Une image peut être appelé dans un paragraphe : <img src="./images/james-white-composite-400w.png" alt="Composition carrée de neuf illustration du graphiste James White" class="img-fluid left" /> ou hors paragraphe.
+                </p>
+                <p class="clear">
+                    Image hors paragraphe : 
+                </p>
+                <img src="./images/synthwave-vibe-james-white-signalnoise-w400.png" alt="Illustration d'une moto sur un ciel couchant avec en premier plan un motar dans le style graphique synthwave" class="img-fluid" />
+                <h3>La balise figure</h3>
+                <p>
+                    Il existe une balise conteneur pour les media, qui aide la sémantique web pour le référencement et l'accessibilité. la balise figure va encadrer un media, et donne la possibilité d'y ajouter une légende, avec la balise figcaption.
+                </p>
+                <figure>
+                    <img src="./images/synthwave-vibe-james-white-signalnoise-w400.png" alt="Illustration d'une moto sur un ciel couchant avec en premier plan un motar dans le style graphique synthwave" class="img-fluid" />
+                    <figcaption>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis facere, quae laboriosam expedita enim ea suscipit illo facilis.
+                    </figcaption>
+                </figure>
+                <p>
+                    La légende sera rattachée sémantiquement à l'image et son texte alternatif, ce qui améliorera le référencement.
+                </p>
+            </article>
+            <article>
+                <header>
+                    <h2 id="audio">L'audio'</h2>
+                </header>
+            </article>
+            <article>
+                <header>
+                    <h2 id="video">Les images</h2>
+                </header>
+            </article>
+            <article>
+                <header>
+                    <h2 id="iframe">Les images</h2>
+                </header>
+            </article>
+            <article>
+                <header>
+                    <h2 id="video-et-audio-hors-site">Les images</h2>
+                </header>
+            </article>
         </section>
     </main>
     <footer>

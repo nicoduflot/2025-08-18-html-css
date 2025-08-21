@@ -89,6 +89,97 @@
                 </p>
                 <h3>button</h3>
                 Si dans un bouton du formulaire, l'attribut type="button", cela indique au navigateur que ce bouton sert à faire autre chose, généralement un comportement développé en javascript.
+                <h3>Le formulaire</h3>
+                <form method="get" action="./contact.html" >
+                    <fieldset>
+                        <legend>Informations Personnelles</legend>
+                        <p>
+                            <label id="label-nom" for="nom">Nom</label> : 
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom ?" aria-label="Nom" aria-describedby="info-nom" aria-labelledby="label-nom" required autofocus />
+                        </p>
+                        <div id="info-nom">
+                            Veuillez entrez votre nom d'usage dans ce champ, il est obligatoire.
+                        </div>
+                        <p>
+                            <label for="email">Email</label> : 
+                            <input type="email" name="email" id="email" placeholder="Votre email ?" aria-describedby="info-email" pattern="^[\w\-\+]+(\.[\w\-]+)*@[\w\-]+(\.[\w\-]+)*\.[\w\-]{2,15}$" required />
+                        </p>
+                        <div id="info-nom">
+                            Veuillez entrez votre email dans ce champ, il est obligatoire.
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre demande</legend>
+                        <p>
+                            <label for="type-demande">Type de la demande</label> : 
+                            <select name="type-demande" id="type-demande" aria-describedby="info-demande">
+                                <option value="">Choisir un type de demande</option>
+                                <optgroup label="Options unitaires">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </optgroup>
+                                <optgroup label="Toutes les options sauf :">
+                                    <option value="6">Toutes les options sauf la 1</option>
+                                    <option value="7">Toutes les options sauf la 2</option>
+                                    <option value="8">Toutes les options sauf la 3</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <div id="info-demande">
+                            Veuillez précisez votre demande
+                        </div>
+                        <p>
+                            <label>Vous représentez : </label>
+                        </p>
+                        <p>
+                            <input type="radio" name="personne" id="physique" value="physique" checked /> <label for="physique">Personnes physique (Particulier)</label><br />
+                            <input type="radio" name="personne" id="morale" value="morale" /> <label for="morale">Personne morale (Entreprise, asso, etc.)</label>
+                        </p>
+                        <p>
+                            <label>Type de diffusion</label>
+                        </p>
+                        <p class="form-check-radio">
+                            <input type="checkbox" name="diff-email" id="diff-email" /> <label for="diff-email">Campagne d'emailing</label> <br />
+                            <input type="checkbox" name="diff-telephone" id="diff-telephone" /> <label for="diff-telephone">Télé-opérateurs</label> <br />
+                            <input type="checkbox" name="diff-radio" id="diff-radio" /> <label for="diff-radio">Publicités radiophonique</label> <br />
+                            <input type="checkbox" name="diff-tele" id="diff-tele" /> <label for="diff-tele">Publicités télévisuelles</label> <br />
+                        </p>
+                        <p>
+                            <input class="form-range" type="range" name="range" id="range" min="0" max="10" step="0.5" value="5" /> <span id="rangeValue">5</span>
+                            <script>
+                                const range = document.getElementById('range');
+                                const rangeValue = document.getElementById('rangeValue');
+                                range.addEventListener('change', function(){
+                                    rangeValue.innerHTML = range.value;
+                                });
+                            </script>
+                        </p>
+                        <p>
+                            <input type="color" name="color" id="color" /> <span id="colorValue">#000000</span>
+                            <script>
+                                const color = document.getElementById('color');
+                                const colorValue = document.getElementById('colorValue');
+                                color.addEventListener('change', function(){
+                                    colorValue.innerHTML = color.value;
+                                });
+                            </script>
+                        </p>
+                        <p>
+                            <label for="message">Votre message : </label><br />
+                            <div class="">
+                                <textarea name="message" id="message" required placeholder="Décrivez votre demande ici"></textarea>
+                            </div>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">Envoyer</button> 
+                        <button type="reset">Effacer</button> 
+                        <button type="button">Un bouton</button> 
+                    </p>
+                </form>
             </article>
         </section>
     </main>

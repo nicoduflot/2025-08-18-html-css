@@ -146,6 +146,16 @@ figure figcaption{
     text-align: left;
 }
 
+/* formulaire */
+
+input:invalid {
+  border: 2px solid darkred;
+}
+
+input:valid {
+  border: 2px solid darkgreen;
+}
+
 /* déclaration des classes */
 
 .titre-site{

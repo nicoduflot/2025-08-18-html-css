@@ -85,13 +85,63 @@
             </article>
             <article>
                 <header>
-                    <h2 id="audio">L'audio'</h2>
+                    <h2 id="audio">L'audio</h2>
                 </header>
+                <p>
+                    Pour mettre à disposition un fichier audio sur un site, on utlise la balise audio.
+                    Cette balise peut soit appeler un seul fichier, ou utiliser aussi la balise source. 
+                    Utiliser plusieurs sources permet de s'adapter à la configuration de l'utilisateur. Un appareil, pour
+                    lire un fichier audio (ou vidéo) doit posséder les bon codecs. Si je met a disposition un fichier
+                    avec une extension que l'appareil ne connaît pas, j'aurais une erreur.
+                    Si je propose le même son dans des formats différent avec source, l'appareil lancera le premier
+                    fichier qu'il est capable de lire.
+                </p>
+                <figure>
+                    <audio id="diablo" controls>
+                        <source src="./media/audio/diablo_town.ogg" type="audio/ogg" />
+                        <source src="./media/audio/diablo_town.mp3" type="audio/mp3" />
+                    </audio>
+                    <figcaption>
+                        Lire le fichier<br />
+                        <button onclick="playMp3('diablo')">Lecture</button> <button onclick="pauseMp3('diablo')">Pause</button>
+                        <script>
+                            function playMp3(video){
+                                document.getElementById(video).play();
+                            }
+                            function pauseMp3(video){
+                                document.getElementById(video).pause();
+                            }
+                        </script>
+                    </figcaption>
+                </figure>
             </article>
             <article>
                 <header>
-                    <h2 id="video">Les images</h2>
+                    <h2 id="video">La vidéo</h2>
                 </header>
+                <h3>La balise video</h3>
+                <p>
+                    La balise vidéo se comporte comme la balise audio.
+                </p>
+                <figure>
+                    <video id="fallout" controls autoplay muted class="img-fluid">
+                        <source src="./media/video/Fallout-4-Launch-Trailer.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption>
+                        Lire le fichier<br />
+                        <button onclick="playMp3('fallout')">Lecture</button> <button onclick="pauseMp3('fallout')">Pause</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <video id="bunny" controls class="img-fluid">
+                        <source src="./media/video/Big_Buck_Bunny_360_10s_1MB.webm" type="video/webm" />
+                        <source src="./media/video/Big_Buck_Bunny_360_10s_1MB.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption>
+                        Lire le fichier<br />
+                        <button onclick="playMp3('bunny')">Lecture</button> <button onclick="pauseMp3('bunny')">Pause</button>
+                    </figcaption>
+                </figure>
             </article>
             <article>
                 <header>
